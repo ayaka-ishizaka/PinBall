@@ -32,9 +32,6 @@ public class BallController : MonoBehaviour {
 		//ターゲットの種類を判別
 		string yourTag = collision.gameObject.tag;
 
-		//得点を加算
-		this.point += point;
-
 		//ターゲットの種類によって取得できる得点を変更
 		if (yourTag == "SmallStarTag") {
 			point += 10;
